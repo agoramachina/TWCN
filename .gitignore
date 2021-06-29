@@ -1,5 +1,6 @@
 
 **node_modules/
-.eslintignore
-.eslintrc
-.gitignore
+**.github/
+**.eslintignore
+**.eslintrc
+**.gitignore
