@@ -17,6 +17,8 @@ import { preloadTemplates } from './preloadTemplates';
 // Initialize module
 Hooks.once('init', async () => {
   console.log('TWCN | Initializing TWCN');
+  const initMSG = { content: 'Initializing TWCN' };
+  ChatMessage.create(initMSG, {});
 
   // Assign custom classes and constants here
 
