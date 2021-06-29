@@ -3,7 +3,7 @@
 /* ----------------------------- */
 
 Hooks.once('init', async function() {
-   console.log('twcn | Initializing TWCN');
+   console.log('twcn | !!!!!!!INITIALIZING TWCN!!!!!!!');
    //setupSocket();
    //initHooks();
 });
