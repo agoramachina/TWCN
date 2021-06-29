@@ -22,8 +22,8 @@ const s_ERROR_HANDLER = (error) =>
 {
    if (typeof error.stack !== 'string') { return; }
 
-   // Only print out stack trace if it includes `demo-rollup-module`.
-   if (error.stack.includes('demo-rollup-module'))
+   // Only print out stack trace if it includes `TWCN`.
+   if (error.stack.includes('TWCN'))
    {
       console.log(`Let's get the stack trace / use Chrome dev tools if shipping source maps or stacktracify:`);
 
