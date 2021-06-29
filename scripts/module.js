@@ -4,8 +4,7 @@
 
 Hooks.once('init', async function () {
   console.log('twcn | Initializing TWCN');
-  let initMSG = { content: 'Initializing TWCN' };
-  ChatMessage.create(initMSG, {});
+
   //setupSocket();
   //initHooks();
 });
@@ -23,6 +22,8 @@ Hooks.once('setup', function () {
 /* ----------------------------- */
 Hooks.once('ready', async function () {
   //readyHooks();
+  let message = { content: 'Initializing TWCN' };
+  ChatMessage.create(message, {});
 });
 
 function setupFlags() {

@@ -16,10 +16,7 @@ import { preloadTemplates } from './preloadTemplates';
 
 // Initialize module
 Hooks.once('init', async () => {
-  console.log('TWCN | Initializing TWCN');
-  const initMSG = { content: 'Initializing TWCN' };
-  ChatMessage.create(initMSG, {});
-
+  console.log('TWCN | BUTTS BUTTS BUTTS');
   // Assign custom classes and constants here
 
   // Register custom module settings
@@ -40,6 +37,8 @@ Hooks.once('setup', async () => {
 // When ready
 Hooks.once('ready', async () => {
   // Do anything once the module is ready
+  //const message = { content: 'Initializing TWCN' };
+  //ChatMessage.create(message, {});
 });
 
 // Add any additional hooks if necessary
