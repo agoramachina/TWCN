@@ -15,3 +15,4 @@ node_modules/
 # aren't committed.
 deploy/
 dist/
+node_modules/
