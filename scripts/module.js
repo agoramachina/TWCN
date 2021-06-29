@@ -3,7 +3,9 @@
 /* ----------------------------- */
 
 Hooks.once('init', async function() {
-   console.log('twcn | !!!!!!!INITIALIZING TWCN!!!!!!!');
+   console.log('twcn | Initializing TWCN');
+   let initMSG = {content : "Initializing TWCN"};
+   ChatMessage.create(initMSG,{});
    //setupSocket();
    //initHooks();
 });
