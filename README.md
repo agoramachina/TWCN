@@ -1,78 +1,73 @@
-# Those Who Come Next
+![](https://img.shields.io/badge/Foundry-v0.7.9-informational)
+<!--- Downloads @ Latest Badge -->
+<!--- replace <user>/<repo> with your username/repository -->
+<!--- ![Latest Release Download Count](https://img.shields.io/github/downloads/<user>/<repo>/latest/module.zip) -->
 
-A Foundry VTT module for Those Who Come Next
+<!--- Forge Bazaar Install % Badge -->
+<!--- replace <your-module-name> with the `name` in your manifest -->
+<!--- ![Forge Installs](https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&query=package.installs&suffix=%25&url=https%3A%2F%2Fforge-vtt.com%2Fapi%2Fbazaar%2Fpackage%2F<your-module-name>&colorB=4aa94a) -->
 
-## Installation
 
-Add your installation instructions here.
+# How to use this Template to create a versioned Release
 
-## Development
+1. Open your repository's releases page.
 
-### Prerequisites
+![Where to click to open repository releases.](https://user-images.githubusercontent.com/7644614/93409301-9fd25080-f864-11ea-9e0c-bdd09e4418e4.png)
 
-In order to build this module, recent versions of `node` and `npm` are
-required. Most likely using `yarn` also works but only `npm` is officially
-supported. We recommend using the latest lts version of `node`, which is
-`v14.15.5` at the time of writing. If you use `nvm` to manage your `node`
-versions, you can simply run
+2. Click "Draft a new release"
 
-```
-nvm install
-```
+![Draft a new release button.](https://user-images.githubusercontent.com/7644614/93409364-c1333c80-f864-11ea-89f1-abfcb18a8d9f.png)
 
-in the project's root directory.
+3. Fill out the release version as the tag name.
 
-You also need to install the the project's dependencies. To do so, run
+## <span color="red">Do not prefix your tag name with a `v`.</span>
 
-```
-npm install
-```
+If you want to add details at this stage you can, or you can always come back later and edit them.
 
-### Building
+![Release Creation Form](https://user-images.githubusercontent.com/7644614/93409543-225b1000-f865-11ea-9a19-f1906a724421.png)
 
-You can build the project by running
+4. Hit submit.
 
-```
-npm run build
-```
+5. Wait a few minutes.
 
-Alternatively, you can run
+A Github Action will run to populate the `module.json` and `module.zip` with the correct urls that you can then use to distribute this release. You can check on its status in the "Actions" tab.
 
-```
-npm run build:watch
-```
+![Actions Tab](https://user-images.githubusercontent.com/7644614/93409820-c1800780-f865-11ea-8c6b-c3792e35e0c8.png)
 
-to watch for changes and automatically build as necessary.
+6. Grab the module.json url from the release's details page.
 
-### Linking the built project to Foundry VTT
+![image](https://user-images.githubusercontent.com/7644614/93409960-10c63800-f866-11ea-83f6-270cc5d10b71.png)
 
-In order to provide a fluent development experience, it is recommended to link
-the built module to your local Foundry VTT installation's data folder. In
-order to do so, first add a file called `foundryconfig.json` to the project root
-with the following content:
+This `module.json` will only ever point at this release's `module.zip`, making it useful for sharing a specific version for compatibility purposes.
 
-```
-{
-  "dataPath": "/absolute/path/to/your/FoundryVTT/Data"
-}
-```
+7. You can use the url `https://github.com/<user>/<repo>/releases/latest/download/module.json` to refer to the manifest.
 
-(if you are using Windows, make sure to use `\` as a path separator instead of
-`/`)
+This is the url you want to use to install the module typically, as it will get updated automatically.
 
-Then run
+# How to List Your Releases on Package Admin
 
-```
-npm run link-project
-```
+To request a package listing for your first release, go to the [Package Submission Form](https://foundryvtt.com/packages/submit) (accessible via a link at the bottom of the "[Systems and Modules](https://foundryvtt.com/packages/)" page on the Foundry website).
 
-On Windows, creating symlinks requires administrator privileges so unfortunately
-you need to run the above command in an administrator terminal for it to work.
+Fill in the form. "Package Name" must match the name in the module manifest.  Package Title will be the display name for the package.  Package URL should be your repo URL.
+![image](https://user-images.githubusercontent.com/36359784/120664263-b49e5500-c482-11eb-9126-af7006389903.png)
 
-### Running the tests
 
-You can run the tests with the following command:
+One of the Foundry staff will typically get back to you with an approval or any further questions within a few days, and give you access to the package admin pages.
 
-```
-npm test
-```
+Once you have access to the [module admin page](https://foundryvtt.com/admin/packages/package/), you can release a new version by going into the page for your module, scrolling to the bottom, and filling in a new Package Version.
+
+When listing a new version, Version should be the version number you set above, and the Manifest URL should be the manifest __for that specific version__ (do not use /latest/ here).
+![image](https://user-images.githubusercontent.com/36359784/120664346-c4b63480-c482-11eb-9d8b-731b50d70939.png)
+
+> ### :warning: Important :warning:
+>
+> It is very important that you use the specific release manifest url, and not the `/latest` url here. For more details about why this is important and how Foundry Installs/Updates packages, read [this wiki article](https://foundryvtt.wiki/en/development/guides/releases-and-history).
+
+Clicking "Save" in the bottom right will save the new version, which means that anyone installing your module from within Foundry will get that version, and a post will be generated in the #release-announcements channel on the official Foundry VTT Discord.
+
+
+# FoundryVTT Module
+
+Does something, probably
+
+## Changelog
