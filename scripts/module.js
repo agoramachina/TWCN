@@ -1,10 +1,42 @@
+/* ----------------------------- */
+/* Initialize module             */
+/* ----------------------------- */
+
 Hooks.once('init', async function() {
+   console.log('twcn | Initializing TWCN Module');
+   //setupSocket();
+   //initHooks();
+});
+
+/* ----------------------------- */
+/* Setup module                  */
+/* ----------------------------- */
+Hooks.once('setup', function() {
+   // Do anything after "init" but before "ready"
+   setupFlags();
 
 });
 
+/* ----------------------------- */
+/* Run when ready                */
+/* ----------------------------- */
 Hooks.once('ready', async function() {
-
+   //readyHooks();
 });
+
+
+
+
+
+
+function setupFlags() {
+   //twcnFlags.push("flags.twcn.rads")
+   //twcnFlags.push("flags.twcn.radLV")
+
+
+}
+
+
 
 /**
  * Add window listeners to catch errors so we can print out the stack trace.
