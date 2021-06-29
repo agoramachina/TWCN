@@ -1,6 +1,6 @@
-# TWCN
+# Those Who Come Next
 
-Add your description here.
+A Foundry VTT module for Those Who Come Next
 
 ## Installation
 
