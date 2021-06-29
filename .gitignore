@@ -28,17 +28,17 @@ dist
 junit.xml
 
 # foundry-factory misc
-.github/
-.husky
-.editorconfig
-.eslintignore
-.eslintrc.js
-.nvmrc
-.prettierignore
-.prettierrc.js
-gulpfile.js
-jest.config.js
-rollup.config.js
-tsconfig.eslint.json
-tsconfig.json
+#.github/
+#.husky
+#.editorconfig
+#.eslintignore
+#.eslintrc.js
+#.nvmrc
+#.prettierignore
+#.prettierrc.js
+#gulpfile.js
+#jest.config.js
+#rollup.config.js
+#tsconfig.eslint.json
+#tsconfig.json
 
