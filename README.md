@@ -9,7 +9,6 @@
 
 # A Foundry VTT module for Those Who Come Next
 
-![](src/assets/TWCN_banner.jpg)
-
+<img align="center" src="https://github.com/agoramachina/TWCN/blob/master/src/assets/TWCN_banner.jpg">
 
 
