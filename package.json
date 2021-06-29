@@ -2,20 +2,20 @@
   "private": true,
   "name": "TWCN",
   "version": "0.0.0",
-  "description": "",
-  "license": "",
-  "homepage": "",
+  "description": "A Foundry VTT module for Those Who Come Next",
+  "license": "MIT",
+  "homepage": "https://github.com/agoramachina/TWCN",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/agoramachina/TWCN"
   },
   "bugs": {
     "url": ""
   },
   "contributors": [
     {
-      "name": "",
-      "email": ""
+      "name": "agoramachina",
+      "email": "agoramachina@gmail.com"
     }
   ],
   "scripts": {

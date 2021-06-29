@@ -1,13 +1,13 @@
 {
   "name": "TWCN",
-  "title": "TWCN",
-  "description": "",
+  "title": "Those Who Come Next",
+  "description": "A Foundry VTT module for Those Who Come Next",
   "version": "0.0.0",
-  "author": "",
+  "author": "agoramachina",
   "authors": [
     {
-      "name": "",
-      "email": ""
+      "name": "agoramachina",
+      "email": "agoramachina@gmail.com"
     }
   ],
   "minimumCoreVersion": "0.7.9",
