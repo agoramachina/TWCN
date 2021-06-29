@@ -2,7 +2,7 @@
   "name": "TWCN",
   "title": "Those Who Come Next",
   "description": "A Foundry VTT module for Those Who Come Next",
-  "version": "0.0.0",
+  "version": "0.3.0",
   "author": "agoramachina",
   "authors": [
     {
@@ -27,7 +27,7 @@
   "socket": false,
   "url": "",
   "manifest": "",
-  "download": "https://host/path/to/0.0.0.zip",
+  "download": "https://host/path/to/0.3.0.zip",
   "license": "",
   "readme": "",
   "bugs": "",

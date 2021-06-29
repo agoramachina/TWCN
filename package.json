@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "TWCN",
-  "version": "0.0.0",
+  "version": "0.3.0",
   "description": "A Foundry VTT module for Those Who Come Next",
   "license": "MIT",
   "homepage": "https://github.com/agoramachina/TWCN",
