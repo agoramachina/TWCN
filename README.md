@@ -1,16 +1,78 @@
-![](https://img.shields.io/badge/Foundry-v0.8.6-informational)
-<!--- Downloads @ Latest Badge -->
-<!--- ![Latest Release Download Count](https://img.shields.io/github/downloads/agoramachina/TWCN/latest/module.zip) -->
+# TWCN
 
-<!--- Forge Bazaar Install % Badge -->
-<!--- replace <your-module-name> with the `name` in your manifest -->
-<!--- ![Forge Installs](https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&query=package.installs&suffix=%25&url=https%3A%2F%2Fforge-vtt.com%2Fapi%2Fbazaar%2Fpackage%2F<your-module-name>&colorB=4aa94a) -->
+Add your description here.
 
+## Installation
 
-# A Foundry VTT module for Those Who Come Next
+Add your installation instructions here.
 
-<p align="center">
-<img align="center" src="https://github.com/agoramachina/TWCN/blob/master/assets/TWCN_banner.jpg">
-</p>
+## Development
 
+### Prerequisites
 
+In order to build this module, recent versions of `node` and `npm` are
+required. Most likely using `yarn` also works but only `npm` is officially
+supported. We recommend using the latest lts version of `node`, which is
+`v14.15.5` at the time of writing. If you use `nvm` to manage your `node`
+versions, you can simply run
+
+```
+nvm install
+```
+
+in the project's root directory.
+
+You also need to install the the project's dependencies. To do so, run
+
+```
+npm install
+```
+
+### Building
+
+You can build the project by running
+
+```
+npm run build
+```
+
+Alternatively, you can run
+
+```
+npm run build:watch
+```
+
+to watch for changes and automatically build as necessary.
+
+### Linking the built project to Foundry VTT
+
+In order to provide a fluent development experience, it is recommended to link
+the built module to your local Foundry VTT installation's data folder. In
+order to do so, first add a file called `foundryconfig.json` to the project root
+with the following content:
+
+```
+{
+  "dataPath": "/absolute/path/to/your/FoundryVTT/Data"
+}
+```
+
+(if you are using Windows, make sure to use `\` as a path separator instead of
+`/`)
+
+Then run
+
+```
+npm run link-project
+```
+
+On Windows, creating symlinks requires administrator privileges so unfortunately
+you need to run the above command in an administrator terminal for it to work.
+
+### Running the tests
+
+You can run the tests with the following command:
+
+```
+npm test
+```
